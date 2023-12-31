@@ -5,7 +5,7 @@
 This project enables media control using custom gestures. By leveraging hand landmark detection technology, users can interact with media playback and other system functionalities using hand movements. This README provides information on how to set up, configure, and use the gesture-based media control system.
 
 <div style="text-align: center;">
-  <img src="img/image-2.png" alt="Hand Landmarks" width="550"/>
+  <img src="img\image-2.png" alt="Hand Landmarks" width="550"/>
 </div>
 
 ## Table of Contents
