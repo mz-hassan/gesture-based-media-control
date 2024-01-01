@@ -5,7 +5,7 @@
 This project enables media control using custom gestures. By leveraging hand landmark detection technology, users can interact with media playback and other system functionalities using hand movements. This README provides information on how to set up, configure, and use the gesture-based media control system.
 
 <div style="text-align: center;">
-  <img src="img\image-2.png" alt="Hand Landmarks" width="550"/>
+  <img src="image-2.png" alt="Hand Landmarks" width="550"/>
 </div>
 
 ## Table of Contents
@@ -38,7 +38,7 @@ This project enables media control using custom gestures. By leveraging hand lan
 The project makes use of *OpenCV* to access the webcam of the device. A python script (collect_images.py) is used to capture 500 images of each class at sample rate of 20 images per second into a *data* folder. Another script (extract_marks.py) is used to extract the coordinates of each landmark of the hand detected using *Medipipe Hand-Landmarker* and save the list of data-points into a pickle format.
 
 <div style="text-align: center;">
-  <img src="img/image.png" alt="Hand Landmarks" width="550"/>
+  <img src="image.png" alt="Hand Landmarks" width="550"/>
 </div>
 
 <div style="text-align: center;"> Taken from [1] </div>
@@ -52,7 +52,7 @@ During training, the pickled data-points are loaded. Cross-entropy Loss is used 
 The neural network has a sub-module for each of the fingers and the palm (which includes base of each finger) ie. six in total. The outputs from these sub-modules are then concatenated and sent further to fully connected layers. The last layer (self.fc3 of class Gesture) has as many outputs as many predictions we need (10 in out case).
 
 <div style="text-align: center;">
-  <img src="img/image-1.png" alt="Hand Landmarks" width="600"/>
+  <img src="image-1.png" alt="Hand Landmarks" width="600"/>
 </div>
 
 
